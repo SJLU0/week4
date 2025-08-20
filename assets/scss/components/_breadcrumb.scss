@@ -1,0 +1,17 @@
+/* 麵包屑導覽 */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+  color: $neutral-300;
+}
+
+.breadcrumb-item {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding: 0 8px;
+  }
+}
